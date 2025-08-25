@@ -1,1 +1,30 @@
-
+Cabeçalho vs Docstring em Python
+■ O que é um cabeçalho em Python?
+O termo 'cabeçalho' em Python normalmente se refere à linha de definição de uma função, classe
+ou módulo. É aquela parte que contém o nome e os parâmetros.
+def somar(a, b):
+ return a + b
+➡ O cabeçalho da função aqui é:
+def somar(a, b):
+Em classes:
+class Pessoa:
+■ O que é uma docstring?
+A docstring (documentation string) é uma string de documentação, usada para descrever o que a
+função, classe ou módulo faz. É escrita entre aspas triplas (""" ... """ ou ''' ... ''') logo abaixo do
+cabeçalho.
+def somar(a, b):
+ """
+ Retorna a soma de dois números.
+ Parâmetros:
+ a (int ou float): Primeiro número
+ b (int ou float): Segundo número
+ Retorno:
+ int ou float: Resultado da soma
+ """
+ return a + b
+■ Diferença entre cabeçalho e docstring
+Cabeçalho → Parte que define a função, classe ou método (nome + parâmetros).
+Docstring → Texto de documentação opcional que explica o que o código faz.
+■ Resumindo:
+• Cabeçalho = definição técnica (nome + parâmetros).
+• Docstring = descrição em texto (explicação do propósito).
